@@ -1,0 +1,223 @@
+/* ===============================
+   Global Styles
+=============================== */
+:root {
+  --primary-color: #007bff;
+  --primary-hover-color: #0056b3;
+  --danger-color: #ff4d4f;
+  --warning-color: #ffc107;
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-heading: 'Poppins', sans-serif;
+  --background-color: #ffdfde; /* เปลี่ยนสีพื้นหลังเป็นสีชมพูอ่อน */
+  --light-gray: #f5f5f5;
+  --dark-gray: #333;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--background-color); /* ใช้สีพื้นหลังใหม่ */
+  margin: 0;
+  padding: 0;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   Navbar Styles
+=============================== */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 15px 20px;
+}
+
+.navbar-brand {
+  font-family: var(--font-family-heading);
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.navbar .nav-link {
+  font-size: 1rem;
+  color: var(--dark-gray);
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary-hover-color);
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   Form Styles
+=============================== */
+.form-control {
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+select.form-select {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.btn-primary:hover {
+  background-color: var(--primary-hover-color);
+  transform: translateY(-3px);
+}
+
+button.btn-primary:active {
+  transform: translateY(1px);
+}
+
+/* ===============================
+   Table Styles
+=============================== */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  font-family: var(--font-family-primary);
+  font-size: 1rem;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-weight: 600;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: var(--dark-gray);
+}
+
+.table tr:hover {
+  background-color: var(--light-gray);
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+/* ===============================
+   Button Styles
+=============================== */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #ff1f24;
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* ===============================
+   Card Styles
+=============================== */
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-size: 1.3rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* ===============================
+   Footer Styles
+=============================== */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+  border-top: 2px solid var(--primary-color);
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
